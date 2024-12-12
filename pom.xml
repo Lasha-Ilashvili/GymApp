@@ -35,6 +35,12 @@
 			<artifactId>javafx-controls</artifactId>
 			<version>23.0.1</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.junit.platform</groupId>
+			<artifactId>junit-platform-suite</artifactId>
+			<version>1.10.3</version>
+		</dependency>
 	</dependencies>
 
 	<build>
