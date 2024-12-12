@@ -42,7 +42,7 @@ public class Trainee extends User {
     @Override
     public String toString() {
         return "Trainee{" +
-                "userId=" + traineeId +
+                "traineeId=" + traineeId +
                 ", address='" + address + '\'' +
                 ", dateOfBirth='" + dateOfBirth + '\'' +
                 super.toString() +

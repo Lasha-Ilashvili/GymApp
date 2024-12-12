@@ -6,14 +6,14 @@ public abstract class User {
     private String lastName;
     private String userName;
     private String password;
-    private boolean isActivate;
+    private boolean isActive;
 
-    public User(String firstName, String lastName, String userName, String password, boolean isActivate) {
+    public User(String firstName, String lastName, String userName, String password, boolean isActive) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
         this.password = password;
-        this.isActivate = isActivate;
+        this.isActive = isActive;
     }
 
     public String getFirstName() {
@@ -48,12 +48,12 @@ public abstract class User {
         this.password = password;
     }
 
-    public boolean isActivate() {
-        return isActivate;
+    public boolean isActive() {
+        return isActive;
     }
 
-    public void setActivate(boolean activate) {
-        isActivate = activate;
+    public void setActive(boolean active) {
+        isActive = active;
     }
 
     @Override
@@ -63,7 +63,7 @@ public abstract class User {
                 ", lastName='" + lastName + '\'' +
                 ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
-                ", isActivate=" + isActivate +
+                ", isActive=" + isActive +
                 '}';
     }
 }

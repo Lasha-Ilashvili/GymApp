@@ -32,7 +32,7 @@ public class Trainer extends User {
     @Override
     public String toString() {
         return "Trainer{" +
-                "userId=" + trainerId +
+                "trainerId=" + trainerId +
                 ", specialization='" + specialization + '\'' +
                 super.toString() +
                 '}';

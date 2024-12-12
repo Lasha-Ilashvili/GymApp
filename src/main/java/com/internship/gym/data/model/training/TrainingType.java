@@ -2,24 +2,24 @@ package com.internship.gym.data.model.training;
 
 public class TrainingType {
 
-    private String trainingType;
+    private String trainingTypeName;
 
-    public TrainingType(String trainingType) {
-        this.trainingType = trainingType;
+    public TrainingType(String trainingTypeName) {
+        this.trainingTypeName = trainingTypeName;
     }
 
-    public String getTrainingType() {
-        return trainingType;
+    public String getTrainingTypeName() {
+        return trainingTypeName;
     }
 
-    public void setTrainingType(String trainingType) {
-        this.trainingType = trainingType;
+    public void setTrainingTypeName(String trainingTypeName) {
+        this.trainingTypeName = trainingTypeName;
     }
 
     @Override
     public String toString() {
         return "TrainingType{" +
-                "trainingType='" + trainingType + '\'' +
+                "trainingTypeName='" + trainingTypeName + '\'' +
                 '}';
     }
 }
