@@ -2,6 +2,7 @@ package com.internship.gym.data.service;
 
 import com.internship.gym.data.dao.TraineeDao;
 import com.internship.gym.data.model.user.Trainee;
+import com.internship.gym.utils.Generator;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -14,6 +15,12 @@ public class TraineeService {
     }
 
     public Trainee createTrainee(final Trainee trainee) {
+        String username = Generator.generateUsername(trainee.getFirstName(), trainee.getLastName());
+        String password = Generator.generatePassword();
+
+        trainee.setUsername(username);
+        trainee.setPassword(password);
+
         return traineeDao.addTrainee(trainee);
     }
 

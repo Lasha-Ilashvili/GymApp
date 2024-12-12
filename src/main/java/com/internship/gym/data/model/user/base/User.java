@@ -32,11 +32,11 @@ public abstract class User {
         this.lastName = lastName;
     }
 
-    public String getUserName() {
+    public String getUsername() {
         return userName;
     }
 
-    public void setUserName(String userName) {
+    public void setUsername(String userName) {
         this.userName = userName;
     }
 
